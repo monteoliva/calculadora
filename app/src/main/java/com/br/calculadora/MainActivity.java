@@ -162,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
 
         // limpa variaveis
         operadorPressionado = false;
+        igualPressionado    = false;
         operador            = "";
         valorAtual          = 0;
     }
