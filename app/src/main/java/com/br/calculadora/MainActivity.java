@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView txtVisor;
     private double valorAtual           = 0;
     private boolean operadorPressionado = false;
+    private boolean igualPressionado    = false;
     private String operador             = "";
 
     @Override
@@ -35,8 +36,11 @@ public class MainActivity extends AppCompatActivity {
         // pega o botao pressionado
         Button btn = (Button) view;
 
+        // botao pressionado
+        String btnPress = btn.getText().toString();
+
         // seta o valor no campo
-        setTextValor(btn.getText().toString());
+        setTextValor(btnPress);
     }
 
     /**
@@ -138,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         if (atual.equals("0") && !valor.equals(",")) { atual = ""; }
 
         // pega o valor atual e coloca na tela
-        atual = (!operadorPressionado) ? atual + valor : valor;
+        atual = (!operadorPressionado && !igualPressionado) ? atual + valor : valor;
 
         // seta operador
         operadorPressionado = false;
