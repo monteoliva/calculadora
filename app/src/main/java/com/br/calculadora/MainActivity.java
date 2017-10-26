@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         // instancia a calsse da Calculadora
         calculadora = new Calculadora();
         calculadora.setTxtVisor(txtVisor);
+
+
     }
 
     /**
