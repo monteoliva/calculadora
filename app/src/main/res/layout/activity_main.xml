@@ -15,13 +15,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:padding="10dp"
+        android:background="@color/colorAccent"
         android:ems="10"
         android:gravity="right"
+        android:padding="10dp"
         android:text="0"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:background="@color/colorAccent"/>
+        android:textSize="30sp" />
 
     <!-- Primeira linha de botoes -->
     <LinearLayout
