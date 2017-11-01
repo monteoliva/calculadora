@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // pega o TextView
-        TextView txtVisor = (TextView) findViewById(R.id.txtVisor);
+        TextView txtVisor = findViewById(R.id.txtVisor);
 
         // instancia a calsse da Calculadora
         calculadora = new Calculadora();
